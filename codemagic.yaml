@@ -8,7 +8,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.berniceric
+        bundle_identifier: com.brittneyparrish
       vars:
         BUNDLE_ID: "com.brittneyparrish"
         XCODE_PROJECT: "Baseball.xcodeproj" # Убедитесь, что имя проекта указано правильно
