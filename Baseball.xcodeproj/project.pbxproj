@@ -85,6 +85,7 @@
 		D527BCD32DB12045004C854B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527BCD02DB12045004C854B /* NotificationService.swift */; };
 		D527BCD52DB13893004C854B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D527BCD42DB13893004C854B /* GoogleService-Info.plist */; };
 		D52EAF992DAF991900F5A1A5 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = D52EAF982DAF991900F5A1A5 /* GoogleGenerativeAI */; };
+		D5B579112DB248AB004B4A76 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D5C5C78F2DACF31500343D9C /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D5C5C7902DACF31500343D9C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5C5C78F2DACF31500343D9C /* RealmSwift */; };
 		D5C5C7AD2DAD104900343D9C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D5C5C7AC2DAD104900343D9C /* FirebaseAnalytics */; };
 		D5C5C7AF2DAD104900343D9C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D5C5C7AE2DAD104900343D9C /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -119,6 +120,17 @@
 				D527BC102DB11DAD004C854B /* notificationsvc.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B579122DB248AB004B4A76 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5B579112DB248AB004B4A76 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -598,6 +610,7 @@
 				D51C6B672D9FFE330018000A /* Frameworks */,
 				D51C6B682D9FFE330018000A /* Resources */,
 				D527BC152DB11DAD004C854B /* Embed Foundation Extensions */,
+				D5B579122DB248AB004B4A76 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
