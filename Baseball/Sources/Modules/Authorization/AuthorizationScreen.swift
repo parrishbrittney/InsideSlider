@@ -53,9 +53,11 @@ struct AuthorizationScreen: View {
                     .foregroundStyle(Color(red: 30/255, green: 30/255, blue: 30/255))
             }
             .padding(20)
-//            .padding(.top, 54)
-            .background(Color(red: 228/255, green: 230/255, blue: 237/255))
-            .clipShape(RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight]))
+            .background(
+                RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight])
+                    .fill(Color(red: 228/255, green: 230/255, blue: 237/255))
+                    .edgesIgnoringSafeArea(.top)
+            )
             .padding(.horizontal, -10)
             
             TextField("", text: $email, prompt:
@@ -173,7 +175,6 @@ struct AuthorizationScreen: View {
             .cornerRadius(50)
             .padding(.bottom, 38)
         }
-        .ignoresSafeArea(.all, edges: .top)
         .padding(.horizontal, 10)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
@@ -192,9 +193,11 @@ struct AuthorizationScreen: View {
                     .foregroundStyle(Color(red: 30/255, green: 30/255, blue: 30/255))
             }
             .padding(20)
-//            .padding(.top, 54)
-            .background(Color(red: 228/255, green: 230/255, blue: 237/255))
-            .clipShape(RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight]))
+            .background(
+                RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight])
+                    .fill(Color(red: 228/255, green: 230/255, blue: 237/255))
+                    .edgesIgnoringSafeArea(.top)
+            )
             .padding(.horizontal, -10)
             
             TextField("", text: $name, prompt:
@@ -356,7 +359,6 @@ struct AuthorizationScreen: View {
             .cornerRadius(50)
             .padding(.bottom, 38)
         }
-        .ignoresSafeArea(.all, edges: .top)
         .padding(.horizontal, 10)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(

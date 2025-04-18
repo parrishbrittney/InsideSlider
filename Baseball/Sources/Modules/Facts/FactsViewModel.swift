@@ -10,8 +10,8 @@ final class FactsViewModel: ObservableObject {
     private let geminiService: GeminiService
     
     // API-ключ
-//    private let apiKey = "AIzaSyBBg4_zAfv7JXtXgi_VCKtD0sQ92awA6uo"
-    private let apiKey = ""
+    private let apiKey = "AIzaSyBBg4_zAfv7JXtXgi_VCKtD0sQ92awA6uo"
+//    private let apiKey = ""
     
     init() {
         self.geminiService = GeminiService(apiKey: apiKey)

@@ -30,11 +30,13 @@ struct ExerciseDetailsScreen: View {
                         .foregroundStyle(Color(red: 30/255, green: 30/255, blue: 30/255))
                 }
                 .padding(20)
-                .background(Color(red: 228/255, green: 230/255, blue: 237/255))
-                .clipShape(RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight]))
+                .background(
+                    RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight])
+                        .fill(Color(red: 228/255, green: 230/255, blue: 237/255))
+                        .edgesIgnoringSafeArea(.top)
+                )
                 .padding(.horizontal, -10)
                 
-                // Остальной код без изменений
                 Spacer()
                 
                 Image(viewModel.image)
