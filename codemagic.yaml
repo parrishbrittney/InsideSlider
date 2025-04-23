@@ -41,7 +41,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - bernicerice199822@gmail.com
+          - parrishbrittney1992@gmail.com
         notify:
           success: true
           failure: false
